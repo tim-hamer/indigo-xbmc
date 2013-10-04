@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Actions>
+  <Action id="navigate" deviceFilter="self">
+    <Name>Navigate</Name>
+    <CallbackMethod>navigate</CallbackMethod>
+    <ConfigUI>
+      <Field type="menu" id="direction" defaultValue="item2">
+        <Label>Direction:</Label>
+        <List>
+          <Option value="up">Up</Option>
+          <Option value="down">Down</Option>
+          <Option value="left">Left</Option>
+          <Option value="right">Right</Option>
+          <Option value="select">Select</Option>
+          <Option value="back">Back</Option>
+          <Option value="contextmenu">Context Menu</Option>
+          <Option value="home">Home</Option>
+          <Option value="info">Info</Option>
+          <Option value="showosd">Show OSD</Option>
+        </List>
+      </Field>
+    </ConfigUI>
+  </Action>
+  <Action id="playback" deviceFilter="self">
+    <Name>Playback</Name>
+    <CallbackMethod>playback</CallbackMethod>
+    <ConfigUI>
+      <Field type="menu" id="command" defaultValue="item2">
+        <Label>Command:</Label>
+        <List>
+          <Option value="playpause">Play/Pause</Option>
+          <Option value="stop">Stop</Option>
+        </List>
+      </Field>
+    </ConfigUI>
+  </Action>
+  <Action id="seek" deviceFilter="self">
+    <Name>Seek</Name>
+    <CallbackMethod>seek</CallbackMethod>
+    <ConfigUI>
+      <Field type="menu" id="stepSize" defaultValue="item2">
+        <Label>Step Size and Direction:</Label>
+        <List>
+          <Option value="smallforward">Small Step Forward</Option>
+          <Option value="smallbackward">Small Step Back</Option>
+          <Option value="bigforward">Big Step Forward</Option>
+          <Option value="bigbackward">Big Step Back</Option>
+        </List>
+      </Field>
+    </ConfigUI>
+  </Action>
+  <Action id="activateWindow" deviceFilter="self">
+    <Name>Activate Window</Name>
+    <CallbackMethod>activateWindow</CallbackMethod>
+    <ConfigUI>
+      <Field type="menu" id="direction" defaultValue="item2">
+        <Label>Window:</Label>
+        <List>
+          <Option value="pvr">Live TV</Option>
+        </List>
+      </Field>
+    </ConfigUI>
+  </Action>
+ 
+  <!--
+  <Action id="select" deviceFilter="self">
+    <Name>Select</Name>
+    <CallbackMethod>select</CallbackMethod>
+  </Action>
+  <Action id="back" deviceFilter="self">
+    <Name>Back</Name>
+    <CallbackMethod>Back</CallbackMethod>
+  </Action>
+  -->
+</Actions>

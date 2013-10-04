@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Devices>
+    <Device type="custom" id="receiver">
+        <Name>XBMC Server</Name>
+        <ConfigUI>
+            <Field id="ipaddress" type="textfield">
+                <Label>IP Address:</Label>
+                <Description>IP address of the server</Description>
+            </Field>
+            <Field id="port" type="textfield">
+                <Label>Port:</Label>
+                <Description>Port the server listens on</Description>
+            </Field>
+            <Field id="username" type="textfield" default="admin">
+                <Label>Username:</Label>
+                <Description>Username for the server</Description>
+            </Field>
+            <Field id="password" type="textfield" default="admin">
+                <Label>Password:</Label>
+                <Description>Password for the server</Description>
+            </Field>
+        </ConfigUI>
+    </Device>
+</Devices>
